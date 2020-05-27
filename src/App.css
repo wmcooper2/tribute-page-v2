@@ -1,3 +1,8 @@
+:root {
+  --time: 1000ms;
+  background-color: rgba(215, 164, 80, 0.5);
+}
+
 body,
 html {
   margin: 0;
@@ -17,7 +22,7 @@ li {
   font-size: 1.5rem;
   text-align: center;
   margin: auto;
-  transition-duration: 1000ms;
+  transition-duration: var(--time);
   transition-timing-function: ease-out;
 }
 
@@ -36,7 +41,17 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+
+  /* background-color: rgba(215, 132, 80, 1); */
+}
+
+.flyingmachine {
+  position: absolute;
+  max-height: 50%;
+  height: auto;
+  transition-duration: 2000ms;
+  opacity: 0;
+  z-index: 0;
 }
 
 .rotationkey {
@@ -52,6 +67,9 @@ ul {
 }
 
 #book {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
   height: auto;
 }

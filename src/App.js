@@ -1,6 +1,5 @@
 import React from "react";
 import BulletPoints from "./bullets";
-import FlyingImages from "./flyingimages";
 
 class App extends React.Component {
   render() {
@@ -25,7 +24,6 @@ class App extends React.Component {
           alt="free energy pioneer book cover"
           id="book"
         ></img>
-        <FlyingImages />
       </div>
     );
   }

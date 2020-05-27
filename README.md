@@ -17,8 +17,9 @@ N/A
 * React
 
 ## Problems/Solutions
-* Getting the page's scroll information and applying it within React took a little research. I hade to refresh my knowledge about references within React.
-* Getting the bullets to slide in from the sides when within the viewable screen area required looking into several different approaches like IntersectionObserver API, using state Hooks for a functional component version of the site, and more. However I settled on using the window's properties and getting the bounding rect of the elements to then let me change the class based on where it was on the screen. I made it a one way change so that the elements stay where they are after they move. This problem was a bit of challenge, but I figured it out.
+* Getting the page's scroll information and applying it within React took a little research. I hade to refresh my knowledge about references within React. This was the first time I applied an effect that depending on the scroll position within the page.
+* Getting the bullets to slide in from the sides when within the viewable screen area required looking into several different approaches like IntersectionObserver API, using state Hooks for a functional component version of the site, and more. However I settled on using the window's properties and getting the bounding rect of the elements to then let me change the stylings based on where it was on the screen. I made it a one way change so that the elements stay where they are after they move.
+* I had to find the right color palette for this project. I chose to use the colors from the main image even though all of the other images are in black and white. I think it works out better than just a grayscale theme.
 
 ## More Information
 [Color palette from paletton](https://paletton.com/#uid=50Q0u0kt5i6k3qVoYnmzOedKr9-)
