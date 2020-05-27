@@ -26,8 +26,15 @@ const Data = [
     img: "rotationkey.jpg",
   },
   {
-    data:
-      <React.Fragment>His work is being revisited by <a href='http://www.svpwiki.com/Dale+Pond'>Dale Pond</a> who has been expanding on Keely's work while applying his own ideas</React.Fragment>,
+    data: (
+      <React.Fragment>
+        His work is being revisited by{" "}
+        <span>
+          <a href="http://www.svpwiki.com/Dale+Pond">Dale Pond</a>
+        </span>{" "}
+        who has been expanding on Keely's work while applying his own ideas
+      </React.Fragment>
+    ),
     img: "rotationkey.jpg",
   },
   {

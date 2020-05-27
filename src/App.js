@@ -1,44 +1,14 @@
 import React from "react";
-import "./App.css";
-import Data from "./data";
-// import rotationkey from "./rotationkey.jpg";
-
-const BulletPoints = (props) => {
-  console.log(props);
-  let bullets = Data.map((point, index) => {
-    return (
-      <React.Fragment key={index}>
-        <img src={point.img} className="rotationkey" alt={point.alt}></img>
-        <li>{point.data}</li>
-      </React.Fragment>
-    );
-  });
-  return bullets;
-};
-
-const displayScroll = () => {
-  console.log(window.pageXOffset);
-};
+import BulletPoints from "./bullets";
+import FlyingImages from "./flyingimages";
 
 class App extends React.Component {
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
   render() {
     return (
-      <div
-        className="App"
-        onScroll={() => {
-          displayScroll();
-        }}
-      >
+      <div className="App" onClick={this.handleScroll}>
         <header>John Keely</header>
         <img src="portrait.jpg" id="portrait" alt="portrait"></img>
-        <p id="lifespan">Life to Death</p>
+        <p id="lifespan">September 3rd, 1837 - November 18th, 1898</p>
         <p id="summary">
           Keely is my favorite person in history. Although his work is marred
           with claims of fraud and incomplete theories, I love those incomplete
@@ -47,12 +17,15 @@ class App extends React.Component {
           fantastic concept to consider. Here are some interesting things about
           this man.
         </p>
-        <ul>{BulletPoints(Data)}</ul>
+        <ul>
+          <BulletPoints />
+        </ul>
         <img
           src="book.jpg"
           alt="free energy pioneer book cover"
           id="book"
         ></img>
+        <FlyingImages />
       </div>
     );
   }
