@@ -21,18 +21,12 @@ h1 {
   text-shadow: 0.5rem 0.5rem rgba(186, 156, 41, 0.6);
 }
 
-div.bullet {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
 div.bullet:nth-child(even) {
   background-color: white;
-  z-index: 0;
+  /* z-index: 0; */
 }
 
-div.bullet:nth-child(even) .flyingmachine {
+div.bullet:nth-child(even) .flyingImage {
   border: 6px solid rgb(144, 63, 13);
 }
 

@@ -34,7 +34,7 @@ class Bullet extends React.Component {
 
   slideIn = (el) => {
     const bounds = el.current.getBoundingClientRect();
-    if (bounds.y < Math.floor(window.innerHeight * 0.9)) {
+    if (bounds.y < Math.floor(window.innerHeight * 0.5)) {
       this.setState(() => {
         return { left: "0px" };
       });
@@ -43,7 +43,7 @@ class Bullet extends React.Component {
 
   machineSlideIn = (el) => {
     const bounds = el.current.getBoundingClientRect();
-    if (bounds.y < Math.floor(window.innerHeight * 0.9)) {
+    if (bounds.y < Math.floor(window.innerHeight * 0.5)) {
       this.setState(() => {
         return {
           right: Math.floor(window.innerWidth / 2),
@@ -72,18 +72,19 @@ class Bullet extends React.Component {
     return (
       <div className="bullet" ref={this.bulletRef}>
         <img
-          className="flyingmachine"
+          className="flyingImage"
           ref={this.machineRef}
           src={this.bullet.machineImg}
           alt={this.bullet.alt}
           style={{
             left: this.state.right,
-            transform: "translate(-50%, -5vh)",
             opacity: this.state.opacity,
           }}
         ></img>
 
-        <div className="flyingbullet" style={{ left: this.state.left }}>
+        {/* <img className="keyIcon" src={this.bullet.smallIcon} alt="small icon" ></img> */}
+
+        <div className="flyingtext" style={{ left: this.state.left }}>
           <p>{this.bullet.data}</p>
         </div>
       </div>

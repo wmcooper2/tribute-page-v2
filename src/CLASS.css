@@ -4,33 +4,53 @@
   padding: 0;
 }
 
-.flyingbullet {
+.bullet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.flyingtext {
   position: relative;
   max-width: 210mm;
-  min-height: 100vh;
   font-size: 1.5rem;
   text-align: center;
   margin: auto;
-  margin-top: 10vh;
-  transition-duration: 2000ms;
+  margin-bottom: 1vh;
+  transition-duration: 2500ms;
   transition-timing-function: ease-out;
+  /* z-index: 20; */
 }
 
-.flyingbullet p {
+.flyingtext p {
+  /* display: flex; */
+  /* align-items: center; */
   background-color: rgb(186, 132, 41);
   padding: 1rem;
   border-radius: 1rem;
-  margin: 0;
+  /* margin: 0; */
 }
 
-.flyingmachine {
+.keyIcon {
+  display: block;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  /* transform: translate(calc(50vw - 50%), -50%); */
+  transform: translate(0, 50%);
+  /* z-index: 0; */
+}
+
+.flyingImage {
   position: absolute;
   max-width: 90vw;
-  max-height: 75vh;
-  margin-bottom: 20vh;
+  max-height: 70%;
+  margin-top: 5vh;
   transition-duration: 2000ms;
   opacity: 0;
   z-index: 0;
+  transform: translate(-50%);
 }
 
 .rotationkey {
