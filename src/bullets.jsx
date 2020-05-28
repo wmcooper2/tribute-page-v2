@@ -4,11 +4,14 @@ class Bullet extends React.Component {
   constructor(props) {
     super(props);
     this.bullet = props.bullet;
+    this.index = props.index;
     this.bulletRef = React.createRef();
     this.machineRef = React.createRef();
     this.handleScroll = this.handleScroll.bind(this);
     this.slideIn = this.slideIn.bind(this);
     this.machineSlideIn = this.machineSlideIn.bind(this);
+    this.borderColor = this.borderColor.bind(this);
+
     this.state = {
       left: -window.innerWidth,
       right: window.innerWidth,
@@ -40,19 +43,34 @@ class Bullet extends React.Component {
 
   machineSlideIn = (el) => {
     const bounds = el.current.getBoundingClientRect();
-    if (bounds.y < Math.floor(window.innerHeight * 0.6)) {
+    if (bounds.y < Math.floor(window.innerHeight * 0.9)) {
       this.setState(() => {
         return {
           right: Math.floor(window.innerWidth / 2),
+          //   right: Math.floor(window.innerWidth),
+          //   right: 0,
           opacity: 1,
         };
       });
     }
   };
 
+  borderColor = (index) => {
+    console.log("index === ", index);
+    let color = "5px solid ";
+    const color1 = "rgb(215, 132, 80)";
+    console.log("Color===", color + color1);
+    switch (index) {
+      case 0:
+        return color + color1;
+      default:
+        return color + "black";
+    }
+  };
+
   render() {
     return (
-      <div ref={this.bulletRef}>
+      <div className="bullet" ref={this.bulletRef}>
         <img
           className="flyingmachine"
           ref={this.machineRef}
@@ -60,14 +78,14 @@ class Bullet extends React.Component {
           alt={this.bullet.alt}
           style={{
             left: this.state.right,
-            transform: "translate(0, -10vh)",
+            transform: "translate(-50%, -5vh)",
             opacity: this.state.opacity,
           }}
         ></img>
 
-        <li className="flyingbullet" style={{ left: this.state.left }}>
-          {this.bullet.data}
-        </li>
+        <div className="flyingbullet" style={{ left: this.state.left }}>
+          <p>{this.bullet.data}</p>
+        </div>
       </div>
     );
   }
@@ -75,7 +93,7 @@ class Bullet extends React.Component {
 
 class BulletPoints extends React.Component {
   bullets = Data.map((bullet, index) => {
-    return <Bullet bullet={bullet} key={index} />;
+    return <Bullet bullet={bullet} key={index} index={index} />;
   });
 
   render() {

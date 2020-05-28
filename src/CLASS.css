@@ -1,0 +1,46 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.flyingbullet {
+  position: relative;
+  max-width: 210mm;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 10vh;
+  transition-duration: 2000ms;
+  transition-timing-function: ease-out;
+}
+
+.flyingbullet p {
+  background-color: rgb(186, 132, 41);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 0;
+}
+
+.flyingmachine {
+  position: absolute;
+  max-width: 90vw;
+  max-height: 75vh;
+  margin-bottom: 20vh;
+  transition-duration: 2000ms;
+  opacity: 0;
+  z-index: 0;
+}
+
+.rotationkey {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  transition-duration: 500ms;
+}
+
+.rotationkey:hover {
+  transform: translate(20px);
+  transform: rotate(45deg);
+}
