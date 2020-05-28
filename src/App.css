@@ -14,10 +14,10 @@ html {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   font-family: cursive;
-  margin-top: 0;
+  margin: 0;
   text-shadow: 0.5rem 0.5rem rgba(186, 156, 41, 0.6);
 }
 

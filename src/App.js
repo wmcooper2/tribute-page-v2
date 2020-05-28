@@ -7,7 +7,11 @@ class App extends React.Component {
       <div className="App" onClick={this.handleScroll}>
         <div classname="landing">
           <h1>John Keely</h1>
-          <img src="portrait.jpg" id="portrait" alt="portrait"></img>
+          <img
+            src="https://wmcooper2.com/tribute-page2/portrait.jpg"
+            id="portrait"
+            alt="portrait"
+          ></img>
           <p id="lifespan">September 3rd, 1837 - November 18th, 1898</p>
         </div>
         <p id="summary">
@@ -37,7 +41,7 @@ class App extends React.Component {
             alt="book link"
           >
             <img
-              src="book.jpg"
+              src="https://wmcooper2.com/tribute-page2/book.jpg"
               alt="free energy pioneer book cover"
               id="book"
             ></img>
