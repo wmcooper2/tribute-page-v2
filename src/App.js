@@ -8,7 +8,7 @@ class App extends React.Component {
         <div classname="landing">
           <h1>John Keely</h1>
           <img
-            src="https://wmcooper2.com/tribute-page2/portrait.jpg"
+            src="https://wmcooper2.com/tribute-page-v2/portrait.jpg"
             id="portrait"
             alt="portrait"
           ></img>
@@ -41,7 +41,7 @@ class App extends React.Component {
             alt="book link"
           >
             <img
-              src="https://wmcooper2.com/tribute-page2/book.jpg"
+              src="https://wmcooper2.com/tribute-page-v2/book.jpg"
               alt="free energy pioneer book cover"
               id="book"
             ></img>
