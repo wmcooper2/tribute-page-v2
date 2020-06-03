@@ -20,16 +20,12 @@
   margin-bottom: 1vh;
   transition-duration: 2500ms;
   transition-timing-function: ease-out;
-  /* z-index: 20; */
 }
 
 .flyingtext p {
-  /* display: flex; */
-  /* align-items: center; */
   background-color: rgb(186, 132, 41);
   padding: 1rem;
   border-radius: 1rem;
-  /* margin: 0; */
 }
 
 .keyIcon {
@@ -37,9 +33,7 @@
   width: 20%;
   height: 20%;
   border-radius: 50%;
-  /* transform: translate(calc(50vw - 50%), -50%); */
   transform: translate(0, 50%);
-  /* z-index: 0; */
 }
 
 .flyingImage {

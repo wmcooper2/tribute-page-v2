@@ -34,7 +34,7 @@ const Data = [
 
   {
     data:
-      "Keely believed that a gallon of water had the latent energy stored within it to destroy the entire universe (as they knew it at the time) if released all at once much like how an atomic bomb releases its energy. However, as he stated, it would have to be several subdivisions below the atomic to release such a force.",
+      "Keely believed that a gallon of water had the latent energy stored within it to destroy the entire universe (as they knew it at the time) if released all at once much like how an atomic bomb releases its energy.",
     machineImg: "https://wmcooper2.com/tribute-page-v2/disentegrator.jpg",
     smallIcon: "https://wmcooper2.com/tribute-page-v2/key5.jpg",
     alt: "disentegrator",
