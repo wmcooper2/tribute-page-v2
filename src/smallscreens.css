@@ -1,12 +1,11 @@
 @media (max-width: 600px) {
   .bullet {
-    min-height: 80vh;
+    height: 100vh;
   }
 
   #bookrecommendation {
     font-size: 1.5rem;
     text-align: justify;
-    /* margin: 1rem; */
     margin: 2rem auto;
     max-width: 80vw;
   }

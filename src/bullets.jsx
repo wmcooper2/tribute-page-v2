@@ -76,14 +76,9 @@ class Bullet extends React.Component {
           ref={this.machineRef}
           src={this.bullet.machineImg}
           alt={this.bullet.alt}
-          style={{
-            left: this.state.right,
-            opacity: this.state.opacity,
-          }}
+          style={{ left: this.state.right, opacity: this.state.opacity }}
         ></img>
-
         {/* <img className="keyIcon" src={this.bullet.smallIcon} alt="small icon" ></img> */}
-
         <div className="flyingtext" style={{ left: this.state.left }}>
           <p>{this.bullet.data}</p>
         </div>

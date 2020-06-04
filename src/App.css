@@ -23,12 +23,20 @@ h1 {
 
 div.bullet:nth-child(even) {
   background-color: white;
-  /* min-height: 110vh; */
-  /* z-index: 0; */
+  background: rgb(214, 132, 80);
+  background: linear-gradient(
+    197deg,
+    rgba(214, 132, 80, 1) 0%,
+    rgba(214, 164, 80, 1) 40%,
+    rgba(214, 186, 80, 1) 50%,
+    rgba(214, 164, 80, 1) 60%,
+    rgba(214, 132, 80, 1) 100%
+  );
 }
 
-div.bullet:nth-child(even) .flyingImage {
-  border: 6px solid rgb(144, 63, 13);
+div.bullet .flyingImage {
+  height: 100vh;
+  width: auto;
 }
 
 ul {

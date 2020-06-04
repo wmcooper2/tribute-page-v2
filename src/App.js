@@ -5,7 +5,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App" onClick={this.handleScroll}>
-        <div classname="landing">
+        <div className="landing">
           <h1>John Keely</h1>
           <img
             src="https://wmcooper2.com/tribute-page-v2/portrait.jpg"
