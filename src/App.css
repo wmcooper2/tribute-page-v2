@@ -35,7 +35,8 @@ div.bullet:nth-child(even) {
 }
 
 div.bullet .flyingImage {
-  height: 100vh;
+  /* height: 100vh; */
+  height: 75%;
   width: auto;
 }
 

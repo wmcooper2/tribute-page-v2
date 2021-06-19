@@ -6,12 +6,12 @@ class App extends React.Component {
     return (
       <div className="App" onClick={this.handleScroll}>
         <div className="landing">
-          <h1>John Keely</h1>
           <img
             src="https://wmcooper2.com/tribute-page-v2/portrait.jpg"
             id="portrait"
             alt="portrait"
           ></img>
+          <h1>John Keely</h1>
           <p id="lifespan">September 3rd, 1837 - November 18th, 1898</p>
         </div>
         <p id="summary">
@@ -53,3 +53,4 @@ class App extends React.Component {
 }
 
 export default App;
+

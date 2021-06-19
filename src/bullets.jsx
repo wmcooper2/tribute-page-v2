@@ -47,8 +47,6 @@ class Bullet extends React.Component {
       this.setState(() => {
         return {
           right: Math.floor(window.innerWidth / 2),
-          //   right: Math.floor(window.innerWidth),
-          //   right: 0,
           opacity: 1,
         };
       });
@@ -78,7 +76,6 @@ class Bullet extends React.Component {
           alt={this.bullet.alt}
           style={{ left: this.state.right, opacity: this.state.opacity }}
         ></img>
-        {/* <img className="keyIcon" src={this.bullet.smallIcon} alt="small icon" ></img> */}
         <div className="flyingtext" style={{ left: this.state.left }}>
           <p>{this.bullet.data}</p>
         </div>
@@ -98,3 +95,4 @@ class BulletPoints extends React.Component {
 }
 
 export default BulletPoints;
+
